@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url(Imagenes/fondo-calculadora.png) no-repeat center center /cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 15px;
+    width: 320px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.display input {
+    width: 100%;
+    height: 70px;
+    font-size: 2rem;
+    text-align: right;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+    background: #000;
+    color: #0f0;
+}
+
+.botones {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #333;
+    color: white;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #444;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.operador {
+    background: #ff9500;
+}
+
+.operador:hover {
+    background: #e08700;
+}
+
+#cero {
+    grid-column: span 2;
+}
