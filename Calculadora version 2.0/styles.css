@@ -47,7 +47,7 @@ button {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    background: #333;
+    background: #ffc400;
     color: white;
     transition: 0.2s;
 }
@@ -61,11 +61,11 @@ button:active {
 }
 
 .operador {
-    background: #ff9500;
+    background: #6d4a19;
 }
 
 .operador:hover {
-    background: #e08700;
+    background: #6d4a19;
 }
 
 #cero {
