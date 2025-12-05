@@ -96,7 +96,11 @@ botones.forEach(btn => {
         }
 
         if (valor === ".") {
-            const ultimoNumero = resultado.value.split(/[\+\-×÷]/).pop();
+           
+            const expresion = resultado.value;
+            const partes = expresion.split(/[\+\-×÷]/);
+            const ultimoNumero = partes.pop();
+
             if (ultimoNumero.includes(".")) return;
 
             if (ultimoNumero === "") {
