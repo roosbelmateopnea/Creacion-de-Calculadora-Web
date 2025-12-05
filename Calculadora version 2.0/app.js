@@ -90,7 +90,9 @@ function mostrarError() {
 
 function agregarPunto() {
     let valor = resultado.value;
-    let ultimoNumero = valor.split(/[\+\-×÷]/).pop();
+    const expresion = resultado.value;
+    const partes = expresion.split(/[\+\-×÷]/);
+    const ultimoNumero = partes.pop();
 
 
     if (ultimoNumero.includes(".")) return;
